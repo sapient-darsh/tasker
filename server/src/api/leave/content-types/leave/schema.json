@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaves",
+  "info": {
+    "singularName": "leave",
+    "pluralName": "leaves",
+    "displayName": "leave",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalLeave": {
+      "type": "integer"
+    },
+    "fromDate": {
+      "type": "date"
+    },
+    "toDate": {
+      "type": "date"
+    },
+    "reason": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-s.user-s"
+    }
+  }
+}

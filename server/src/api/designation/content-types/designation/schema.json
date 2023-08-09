@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "designations",
+  "info": {
+    "singularName": "designation",
+    "pluralName": "designations",
+    "displayName": "designation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

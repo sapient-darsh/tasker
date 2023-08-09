@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    },
+    "deployed": {
+      "type": "boolean",
+      "default": false
+    },
+    "project_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-category.project-category"
+    },
+    "technology_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technology-skill.technology-skill",
+      "mappedBy": "project"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-s.user-s"
+    }
+  }
+}

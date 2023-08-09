@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leave_types",
+  "info": {
+    "singularName": "leave-type",
+    "pluralName": "leave-types",
+    "displayName": "leaveType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technology_skills",
+  "info": {
+    "singularName": "technology-skill",
+    "pluralName": "technology-skills",
+    "displayName": "technologySkills"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "technology_skills"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user-s.user-s",
+      "inversedBy": "technology_skills"
+    }
+  }
+}

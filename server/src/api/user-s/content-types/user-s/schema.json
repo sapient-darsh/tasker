@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_s",
+  "info": {
+    "singularName": "user-s",
+    "pluralName": "users-s",
+    "displayName": "users",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "profilePhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "joinDate": {
+      "type": "date"
+    },
+    "probationDate": {
+      "type": "date"
+    },
+    "appraisalDate": {
+      "type": "date"
+    },
+    "phoneNumber": {
+      "type": "biginteger"
+    },
+    "emergencyContact": {
+      "type": "biginteger"
+    },
+    "ctc": {
+      "type": "biginteger"
+    },
+    "aadharCard": {
+      "type": "biginteger"
+    },
+    "panCard": {
+      "type": "string"
+    },
+    "bankName": {
+      "type": "string"
+    },
+    "bankAccountNumber": {
+      "type": "biginteger"
+    },
+    "ifscCode": {
+      "type": "string"
+    },
+    "nameAsPerBank": {
+      "type": "string"
+    },
+    "pastExperience": {
+      "type": "integer"
+    },
+    "experienceWithUs": {
+      "type": "integer"
+    },
+    "totalExperiance": {
+      "type": "integer"
+    },
+    "technology_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technology-skill.technology-skill",
+      "mappedBy": "user"
+    },
+    "designation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::designation.designation"
+    },
+    "user_role": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-role.user-role"
+    }
+  }
+}
