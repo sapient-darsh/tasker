@@ -1,0 +1,9 @@
+export const ROOT = "/";
+export const APP_PREFIX_PATH = "/app";
+export const PAGES_PREFIX_PATH = "/pages";
+export const EMAILS_PREFIX_PATH = "/emails";
+export const DASHBOARD_PREFIX_PATH = "/dashboard";
+export const DAILYTASK_PREFIX_PATH = "/dailytasks";
+export const LEAVE_PREFIX_PATH = "/leave";
+export const PROJECTS_PREFIX_PATH = "/projects";
+export const EMPLOYEES_PREFIX_PATH = "/employees";
